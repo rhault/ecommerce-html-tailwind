@@ -1,7 +1,7 @@
 # Ecommerce with HTML and Tailwind
 
-## Description:
-This project is an example of an ecommerce made with HTML and Tailwind. The purpose of the project is to showcase the developer's skills using Tailwind. The ecommerce has no functionality, as the focus is on styling.
+## Description
+This project is an example of an ecommerce made with HTML and Tailwind. The ecommerce has no functionality, as the focus is on styling.
 
 ## Installation:
 ```[language="bash"] 
