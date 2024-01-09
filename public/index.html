@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body class="font-Montserrat">
+  <nav></nav>
+  <div id="tab_bar"></div>
+  <section class="w-full h-screen">
+    <!-- HOME -->
+    <div id="home" class="w-full h-3/4 bg-capa-mobile bg-no-repeat bg-cover">
+      <div class="w-full h-full flex flex-col space-y-96 items-center">
+        <input type="search" class=" w-11/12 mt-10 p-3 outline-none rounded-full shadow-sm" placeholder="Chair"/>
+        <button class="bg-white p-3 w-1/2 rounded-full text-primary transition
+          duration-500 ease-in-out hover:bg-primary hover:text-white"
+        >Explorar</button>
+      </div>
+    </div>
+    <!-- RECOMENDATIONS -->
+    <div id="recomendations" class="p-5">
+      <h2 class="title">Our Recomendations</h2>
+      <div id="carrosell" class="w-auto h-72 items-center overflow-x-auto overscroll-x-contain flex space-x-4">
+        <!-- Card #1 -->
+        <div class="card">
+          <div class="w-full h-3/5 bg-sofa-mobile bg-cover bg-bottom rounded-t-lg"></div>
+          <div id="item-text" class="p-3">
+            <h4 class="text-white font-bold text-md">Lenia</h4>
+            <p class="text-white text-sm">A very trusty sidekick</p>
+          </div>
+        </div>
+        <!-- Card #2 -->
+        <div class="card">
+          <div class="w-full h-3/5 bg-gabriola bg-cover bg-bottom rounded-t-lg"></div>
+          <div id="item-text" class="p-3">
+            <h4 class="text-terciary font-bold text-md">Gabriola</h4>
+            <p class="text-terciary text-sm">A loveseat that screams.</p>
+          </div>
+        </div>
+        <!-- Card #3 -->
+        <div class="card">
+          <div class="w-full h-3/5 bg-kalok bg-cover bg-bottom rounded-t-lg"></div>
+          <div id="item-text" class="p-3">
+            <h4 class="text-white font-bold text-md">Kalok</h4>
+            <p class="text-white text-sm">To put it plainly</p>
+          </div>
+        </div>
+        <!-- Card #4 -->
+        <div class="card">
+          <div class="w-full h-3/5 bg-sven bg-cover bg-bottom rounded-t-lg"></div>
+          <div id="item-text" class="p-3">
+            <h4 class="text-terciary font-bold text-md">Sven</h4>
+            <p class="text-terciary text-sm">A true highlight.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TREDING -->
+    <div id="treding" class="p-5">
+      <h2 class="title">Treding Stays</h2>
+      <div class="flex flex-col w-full h-full">
+        <div class="w-auto h-96 bg-chicago bg-cover flex rounded-md my-3 justify-end">
+          <p class="mt-5 mr-5 text-xl text-white font-bold underlined" data-text="Chicago"></p>
+        </div>
+        <div class="w-auto h-96 bg-seating bg-cover rounded-md my-3">
+          <p class="mt-5 ml-6 text-xl text-white font-bold underlined" data-text="Seating"></p>
+        </div>
+        <div class="w-auto h-96 bg-table bg-cover flex rounded-md my-3 justify-end">
+          <p class="mt-5 mr-5 text-xl text-white font-bold underlined" data-text="Table"></p>
+        </div>
+        <div class="w-auto h-96 bg-storage bg-cover rounded-md my-3">
+          <p class="mt-5 ml-6 text-xl text-white font-bold underlined" data-text="Storage"></p>
+        </div>
+      </div>
+    </div>
+    <!-- FAQs -->
+    <div id="faqs" class="p-5">
+      <h2 class="title">FAQs</h2>
+      <div class="flex flex-col">
+        <div>
+          <p class="text-primary text-md">Payment Methods</p>
+          <p class="text-sm">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+</body>
+</html>

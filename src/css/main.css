@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+  @apply w-48 h-64  shadow-md rounded-lg flex-none odd:bg-secondary transform transition-all hover:-translate-y-4
+}
+
+.title{
+  @apply text-2xl font-semibold my-7 text-primary
+}
+
+.underlined{
+  @apply before:content-[attr(data-text)] before:w-full before:bg-primary before:h-full before:rounded-md before:p-1 
+}
