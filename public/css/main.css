@@ -540,6 +540,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -548,6 +560,10 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .ml-6 {
@@ -566,20 +582,16 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
+.block {
+  display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-3\/4 {
@@ -592,6 +604,10 @@ video {
 
 .h-72 {
   height: 18rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-96 {
@@ -614,6 +630,10 @@ video {
   width: 91.666667%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -634,16 +654,16 @@ video {
   justify-content: flex-end;
 }
 
-.gap-y-2 {
-  row-gap: 0.5rem;
-}
-
-.gap-y-5 {
-  row-gap: 1.25rem;
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-y-3 {
   row-gap: 0.75rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -664,6 +684,10 @@ video {
 
 .overscroll-x-contain {
   overscroll-behavior-x: contain;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-full {
@@ -696,8 +720,20 @@ video {
   background-image: url('../img/mobile/gabriola.jpeg');
 }
 
+.bg-heart {
+  background-image: url('../icon/Heart.svg');
+}
+
+.bg-home {
+  background-image: url('../icon/Home.svg');
+}
+
 .bg-kalok {
   background-image: url('../img/mobile/kalok.jpg');
+}
+
+.bg-search {
+  background-image: url('../icon/Search.svg');
 }
 
 .bg-seating {
@@ -718,6 +754,14 @@ video {
 
 .bg-table {
   background-image: url('../img/table.jpg');
+}
+
+.bg-user {
+  background-image: url('../icon/User.svg');
+}
+
+.bg-capa-desktop {
+  background-image: url('../img/capa-desktop.svg');
 }
 
 .bg-cover {
@@ -758,10 +802,6 @@ video {
   font-weight: 700;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(204 45 74 / var(--tw-text-opacity));
@@ -777,9 +817,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(143 162 6 / var(--tw-text-opacity));
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-sm {
@@ -862,4 +903,14 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:bg-capa-desktop {
+    background-image: url('../img/capa-desktop.svg');
+  }
 }

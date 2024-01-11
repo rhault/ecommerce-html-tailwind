@@ -7,7 +7,7 @@ module.exports = {
     extend:{
       backgroundImage:{
         "capa-mobile": "url('../img/mobile/capa.jpeg')",
-        "capa-desktop": "url('../img/capa-desktop.webp')",
+        "capa-desktop": "url('../img/capa-desktop.svg')",
         "sofa": "url('../img/sofa_desktop.jpg')",
         "sofa-mobile": "url('../img/mobile/sofa_mobile.jpg')",
         "gabriola": "url('../img/mobile/gabriola.jpeg')",
@@ -17,6 +17,10 @@ module.exports = {
         "seating": "url('../img/Seating.jpg')",
         "table": "url('../img/table.jpg')",
         "storage": "url('../img/storage.png')",
+        "heart": "url('../icon/Heart.svg')",
+        "home": "url('../icon/Home.svg')",
+        "search": "url('../icon/Search.svg')",
+        "user": "url('../icon/User.svg')"
       },
       backgroundColor: theme => ({
         ...theme('color'),
