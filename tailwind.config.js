@@ -17,6 +17,8 @@ module.exports = {
         "seating": "url('../img/Seating.jpg')",
         "table": "url('../img/table.jpg')",
         "storage": "url('../img/storage.png')",
+        "twitter": "url('../img/twitter.png')",
+        "instagram": "url('../img/instagram.png')",
       },
       backgroundColor: theme => ({
         ...theme('color'),

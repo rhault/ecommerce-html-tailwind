@@ -12,10 +12,10 @@
 <body class="font-Montserrat">
   <nav></nav>
   <div id="tab_bar"></div>
-  <section class="w-full h-screen">
+  <section class="w-full h-auto">
     <!-- HOME -->
     <div id="home" class="w-full h-3/4 bg-capa-mobile bg-no-repeat bg-cover">
-      <div class="w-full h-full flex flex-col space-y-96 items-center">
+      <div class="w-full h-full flex flex-col p-5 space-y-96 items-center">
         <input type="search" class=" w-11/12 mt-10 p-3 outline-none rounded-full shadow-sm" placeholder="Chair"/>
         <button class="bg-white p-3 w-1/2 rounded-full text-primary transition
           duration-500 ease-in-out hover:bg-primary hover:text-white"
@@ -105,24 +105,21 @@
         </div>
       </div>
     </div>
-    <div class="p-5">
-      <h3 class="text-md">About Us</h3>
-      <ul class="text-sm flex flex-col gap-y-3 my-4">
-        <li>Investors</li>
-        <li>Jobs</li>
-        <li>Privacy policy</li>
-        <li>Terms and Conditions</li>
-      </ul>
-      <p class="text-sm">Platzi Travel, inc</p>
-      <div>
-        <p>Follow Us</p>
-        <span>icon</span>
-        <span>icon</span>
-      </div>
-
-    </div>
   </section>
-  <footer>
+  <footer class="w-full h-auto p-5 bg-gray-50 text-gray-500">
+    <h3 class="text-lg">About Us</h3>
+    <ul class="space-y-3 my-4 text-sm">
+      <li>Investors</li>
+      <li>Jobs</li>
+      <li>Privacy policy</li>
+      <li>Terms and Conditions</li>
+    </ul>
+    <p class="text-sm">Platzi Travel, inc</p>
+    <div class="text-sm my-4">
+      <p>Follow Us</p>
+      <span class="bg-twitter w-6 h-6 inline-block mr-2"></span>
+      <span class="bg-instagram  w-6 h-6 inline-block"></span>
+    </div>
   </footer>
 </body>
 </html>
