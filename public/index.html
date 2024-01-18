@@ -10,24 +10,37 @@
   <title>Document</title>
 </head>
 <body class="font-Montserrat">
-  <nav></nav>
+  <nav class="w-full h-16 shadow-md hidden lg:block">
+    <div class="w-full h-full flex justify-between px-6">
+      <p class="text-primary text-sm font-extrabold my-auto">Logo</p>
+      <ul class="flex gap-10 text-primary text-sm font-extrabold my-auto">
+        <li>Locations</li>
+      <li>Stays</li>
+      <li>FAQS</li>
+      <li>About Us</li>
+    </ul>
+    <div id="tab_bar" class="w-36 h-10 flex justify-evenly items-center bg-white my-auto">
+      <a href="#recomendations"><img src="./icon/Search.svg" class="w-5 h-5"/></a>
+      <a href="#treding"><img src="./icon/Heart.svg" class="w-5 h-5"/></a>
+      <a href=""><img src="./icon/User.svg" class="w-5 h-5"/></a>
+    </div>
+  </div>
+  </nav>
   <section class="w-full h-auto">
     <!-- HOME -->
-    <div id="home" class="w-full h-3/4 lg:h-96">
-      <div class="w-full h-full flex flex-col space-y-96 items-center py-8  bg-no-repeat bg-cover lg:hidden">
-        <input type="search" class=" w-11/12 mt-10 p-3 outline-none rounded-full shadow-sm" placeholder="Chair"/>
-        <button class="bg-white p-3 w-1/2 rounded-full text-primary transition
-          duration-500 ease-in-out hover:bg-primary hover:text-white"
-        >Explorar</button>
-      </div>
-      <div class="w-full h-full lg:bg-capa-desktop lg:bg-cover lg:bg-no-repeat lg:bg-bottom">
-        <img src="img/capa-desktop.png" alt="" class="w-full h-full">
+    <div id="home" class="w-full h-3/4 lg:h-[500px] bg-no-repeat bg-cover bg-capa-mobile lg:bg-capa-desktop lg:bg-bottom">
+      <div class="w-full h-auto flex flex-col space-y-96 items-center py-8 lg:space-y-14 lg:items-start lg:pl-20 lg:pt-36">
+        <h2 class="hidden text-3xl font-bold w-[30rem] text-white lg:block">Modern furniture for minimalist lovers</h2>
+        <input type="search" class=" w-11/12 mt-10 p-3 outline-none rounded-full shadow-sm lg:hidden" placeholder="Chair"/>
+        <button class="bg-white p-3 w-1/2 rounded-full text-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white lg:w-36">
+          Explorar
+        </button>
       </div>
     </div>
     <!-- RECOMENDATIONS -->
     <div id="recomendations" class="p-5">
       <h2 class="title">Our Recomendations</h2>
-      <div id="carrosell" class="w-auto h-72 items-center overflow-x-auto overscroll-x-contain flex space-x-4">
+      <div id="carrosell" class="w-auto h-72 items-center overflow-x-auto overscroll-x-contain flex space-x-4 mx-auto">
         <!-- Card #1 -->
         <div class="card">
           <div class="w-full h-3/5 bg-sofa-mobile bg-cover bg-bottom rounded-t-lg"></div>
