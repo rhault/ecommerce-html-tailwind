@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
-<body class="font-Montserrat">
+<body class="font-Montserrat dark:bg-gray-800">
   <nav class="w-full h-16 shadow-md hidden lg:block">
-    <div class="w-full h-full flex justify-between px-6">
-      <p class="text-primary text-sm font-extrabold my-auto">Logo</p>
-      <ul class="flex gap-10 text-primary text-sm font-extrabold my-auto">
+    <div class="w-full h-full flex justify-between px-6 text-primary dark:text-white">
+      <p class="text-sm font-extrabold my-auto">Logo</p>
+      <ul class="flex gap-10 text-sm font-extrabold my-auto">
         <li>Locations</li>
-      <li>Stays</li>
-      <li>FAQS</li>
-      <li>About Us</li>
-    </ul>
-    <div id="tab_bar" class="w-36 h-10 flex justify-evenly items-center bg-white my-auto">
+        <li>Stays</li>
+        <li>FAQS</li>
+        <li>About Us</li>
+      </ul>
+    <div id="tab_bar" class="w-36 h-10 flex justify-evenly items-center my-auto">
       <a href="#recomendations"><img src="./icon/Search.svg" class="w-5 h-5"/></a>
       <a href="#treding"><img src="./icon/Heart.svg" class="w-5 h-5"/></a>
       <a href=""><img src="./icon/User.svg" class="w-5 h-5"/></a>
@@ -32,7 +32,7 @@
       <div class="w-full h-full flex flex-col space-y-96 items-center py-8 lg:space-y-14 lg:items-start lg:pl-20">
         <input type="search" class=" w-11/12 mt-10 p-3 outline-none rounded-full shadow-sm lg:hidden" placeholder="Chair"/>
         <h2 class="hidden text-3xl font-bold lg:w-[330px] text-white lg:block">Modern furniture for minimalist lovers</h2>
-        <button class="bg-white p-3 w-1/2 rounded-full text-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white lg:w-36">
+        <button class="bg-white p-3 w-1/2 rounded-full font-bold text-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white lg:w-36">
           Explorar
         </button>
       </div>
@@ -53,8 +53,8 @@
         <div class="card">
           <div class="w-full h-3/5 bg-gabriola bg-cover bg-bottom rounded-t-lg"></div>
           <div id="item-text" class="p-3">
-            <h4 class="text-terciary font-bold text-md">Gabriola</h4>
-            <p class="text-terciary text-sm">A loveseat that screams.</p>
+            <h4 class="text-terciary lg:text-white font-bold text-md">Gabriola</h4>
+            <p class="text-terciary lg:text-white text-sm">A loveseat that screams.</p>
           </div>
         </div>
         <!-- Card #3 -->
@@ -69,8 +69,8 @@
         <div class="card">
           <div class="w-full h-3/5 bg-sven bg-cover bg-bottom rounded-t-lg"></div>
           <div id="item-text" class="p-3">
-            <h4 class="text-terciary font-bold text-md">Sven</h4>
-            <p class="text-terciary text-sm">A true highlight.</p>
+            <h4 class="text-terciary lg:text-white font-bold text-md">Sven</h4>
+            <p class="text-terciary lg:text-white text-sm">A true highlight.</p>
           </div>
         </div>
         <!-- Card #1 -->
@@ -85,8 +85,8 @@
         <div class="card">
           <div class="w-full h-3/5 bg-gabriola bg-cover bg-bottom rounded-t-lg"></div>
           <div id="item-text" class="p-3">
-            <h4 class="text-terciary font-bold text-md">Gabriola</h4>
-            <p class="text-terciary text-sm">A loveseat that screams.</p>
+            <h4 class="text-terciary lg:text-white font-bold text-md">Gabriola</h4>
+            <p class="text-terciary lg:text-white text-sm">A loveseat that screams.</p>
           </div>
         </div>
         <!-- Card #3 -->
@@ -101,8 +101,8 @@
         <div class="card">
           <div class="w-full h-3/5 bg-sven bg-cover bg-bottom rounded-t-lg"></div>
           <div id="item-text" class="p-3">
-            <h4 class="text-terciary font-bold text-md">Sven</h4>
-            <p class="text-terciary text-sm">A true highlight.</p>
+            <h4 class="text-terciary lg:text-white font-bold text-md">Sven</h4>
+            <p class="text-terciary lg:text-white text-sm">A true highlight.</p>
           </div>
         </div>
       </div>
@@ -128,26 +128,26 @@
     <!-- FAQs -->
     <div id="faqs" class="p-5">
       <h2 class="title">FAQs</h2>
-      <div class="flex flex-col gap-y-5">
+      <div class="flex flex-col gap-y-5 dark:text-white">
         <div>
-          <p class="text-primary font-bold text-md mb-2">Payment Methods</p>
+          <p class="faqs-title">Payment Methods</p>
           <p class="text-sm">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
         </div>
         <div>
-          <p class="text-primary font-bold text-md mb-2">Cancellation Policy</p>
+          <p class="faqs-title">Cancellation Policy</p>
           <p class="text-sm">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
         </div>
         <div>
-          <p class="text-primary font-bold text-md mb-2">Long Stays </p>
+          <p class="font-bold text-md mb-2">Long Stays </p>
           <p class="text-sm">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
           <p class="text-sm">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
         </div>
         <div>
-          <p class="text-primary font-bold text-md mb-2">Cancellation Policy</p>
+          <p class="font-bold text-md mb-2">Cancellation Policy</p>
           <p class="text-sm">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
         </div>
         <div>
-          <p class="text-primary font-bold text-md mb-2">Cancellation Policy</p>
+          <p class="font-bold text-md mb-2">Cancellation Policy</p>
           <p class="text-sm">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
         </div>
       </div>
