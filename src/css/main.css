@@ -7,13 +7,13 @@
 }
 
 .title{
-  @apply text-2xl font-semibold my-7 text-primary
+  @apply text-2xl font-semibold my-7 text-primary dark:text-white
 }
 
-/* .faqsTitle{
-  @apply font-bold text-md
-} */
+.faqs-title{
+  @apply font-bold text-lg mb-2 text-primary dark:text-white
+}
 
 .underlined{
-  @apply before:content-[attr(data-text)] before:w-full before:bg-primary before:h-full before:rounded-md before:p-1 
+  @apply before:content-[attr(data-text)] before:w-full before:bg-primary before:h-full before:rounded-md before:p-1 dark:before:bg-black
 }
