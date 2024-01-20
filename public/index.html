@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +20,16 @@
         <li>About Us</li>
       </ul>
     <div id="tab_bar" class="w-36 h-10 flex justify-evenly items-center my-auto">
-      <a href="#recomendations"><img src="./icon/Search.svg" class="w-5 h-5"/></a>
-      <a href="#treding"><img src="./icon/Heart.svg" class="w-5 h-5"/></a>
-      <a href=""><img src="./icon/User.svg" class="w-5 h-5"/></a>
+      <img src="./icon/Search.svg" class="w-5 h-5"/>
+      <button id="buttonDarkMode-sm"><img src="./icon/moon.svg" class="w-5 h-5"/></button>
+      <img src="./icon/User.svg" class="w-5 h-5"/>
     </div>
   </div>
   </nav>
   <section class="w-full h-auto">
     <!-- HOME -->
     <div id="home" class="w-full h-3/4 lg:h-[500px] bg-no-repeat bg-cover bg-capa-mobile lg:bg-capa-desktop lg:bg-bottom">
+      <button id="buttonDarkMode-lg" class="right-5 top-5 absolute w-10 h-6 bg-white rounded-full lg:hidden"><img src="icon/moon.svg" alt="moon" class="w-5 h-5 m-auto"></button>
       <div class="w-full h-full flex flex-col space-y-96 items-center py-8 lg:space-y-14 lg:items-start lg:pl-20">
         <input type="search" class=" w-11/12 mt-10 p-3 outline-none rounded-full shadow-sm lg:hidden" placeholder="Chair"/>
         <h2 class="hidden text-3xl font-bold lg:w-[330px] text-white lg:block">Modern furniture for minimalist lovers</h2>
@@ -174,5 +175,17 @@
       <span class="bg-instagram  w-6 h-6 inline-block"></span>
     </div>
   </footer>
+  <script>
+    const htmlElement = document.querySelector('html');
+    
+    const toggleDarkMode = () => {
+      htmlElement.classList.contains('dark') ?
+      htmlElement.classList.remove('dark') :
+      htmlElement.classList.add('dark')
+    }
+
+    document.querySelector('#buttonDarkMode-sm').addEventListener('click', toggleDarkMode);
+    document.querySelector('#buttonDarkMode-lg').addEventListener('click', toggleDarkMode);
+  </script>
 </body>
 </html>

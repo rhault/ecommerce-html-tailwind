@@ -23,7 +23,8 @@ module.exports = {
         "heart": "url('../icon/Heart.svg')",
         "home": "url('../icon/Home.svg')",
         "search": "url('../icon/Search.svg')",
-        "user": "url('../icon/User.svg')"
+        "user": "url('../icon/User.svg')",
+        "moon": "url('../icon/moon.svg')"
       },
       backgroundColor: theme => ({
         ...theme('color'),
